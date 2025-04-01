@@ -1,0 +1,42 @@
+Item,Price per 100g,Carbohydrates (g),Fat (g),Protein (g),Calories (kcal)
+"Flour, white, all purpose",0.123677249,77.3,1.48,10.9,366.12
+"Rice, white, long grain, uncooked",0.222222222,80.31315,1.033,7.03885,358.705
+Spaghetti and macaroni,0.301146384,74.7,1.5,13,364.3
+"Bread, white, pan",0.424382716,49.2,3.59,9.43,266.83
+"Bread, whole wheat",0.608465608,43.1,3.55,12.3,253.55
+"Cookies, chocolate chip",1.079144621,24,64,6,696
+"Beef, ground, lean",1.222442681,0,12.85,18.15625,188.275
+"Beef, chuck roast, USDA Choice, boneless",1.696208113,0,15,19,211
+"Beef, round roast, USDA Choice, boneless",1.602733686,0.852,5.703,21.475,140.635
+"Beef, stew meat, boneless",1.613315697,0,7,21,147
+"Beef, round steak, USDA Choice, boneless",1.825396825,0,5,27,153
+"Beef, round steak, graded and ungraded, excluding USDA Prime and Choice",1.775793651,0,5,27,153
+"Beef, sirloin steak, USDA Choice, boneless",2.637786596,0,10,22,178
+"Pork, bacon, sliced",1.552910053,0,42,37,526
+"Pork, chops, center cut, bone-in",1.019620811,0,12,22,196
+"Pork, chops, boneless",0.998677249,0,7,24,159
+"Pork, ham, boneless",1.207231041,0,6,21,138
+"Chicken, fresh, whole",0.454365079,0,15,18,207
+"Chicken, legs, bone-in",0.39484127,0,15,16,199
+"Eggs, grade A, large",0.8255,1,9.5,12.6,139.9
+"Milk, fresh, whole, fortified",0.106340819,4.8,3.3,3.2,61.7
+"Cheese, American processed",1.115079365,9.3,25,16,326.2
+"Cheese, cheddar, natural",1.25617284,1.3,33,25,402.2
+"Ice cream, prepackaged",0.341384778,24,11,3.5,209
+Bananas,0.136904762,22.8,0.3,1.1,98.3
+"Oranges, Navel",0.337522046,11.8,0.1,0.9,51.7
+Grapefruit,0.369488536,10.7,0.1,0.8,46.9
+Lemons,0.458553792,9.3,0.3,1.1,44.3
+Strawberries,0.968547913,7.7,0.3,0.7,36.3
+"Potatoes, white",0.214506173,17.5,0.1,2,77
+"Lettuce, iceberg",0.35670194,3.36875,0.07375,0.7425,17.10875
+Tomatoes,0.451940035,3.9,0.2,0.8,20.6
+"Sugar, white",0.987654321,100,0,0,400
+"Margarine, stick",0.293209877,0,80.7,0,726.3
+"Beans, dried",0.364638448,62,1.5,21,345.5
+"Coffee, 100%, ground roast",0.222883598,0,17.49,17.80625,228.635
+"Wine, red and white",0.6474,2.6,0,0.1,10.8
+"Beef, ground, uncooked (80/20)",1.283068783,0,15,18.6,209.4
+"All Ham, pork",0.972442681,0,6,21,138
+"Chicken breast, boneless",0.875,0,1.934,22.525,107.506
+"(Diet) Malt beverages, all types, all sizes, Coffee",1.547398589,0,0,0,0

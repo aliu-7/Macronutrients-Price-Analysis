@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ item['Item'] }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <style>
+        .chart-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>{{ item['Item'] }}</h1>
+    <p>Price per kg: ${{ '%.2f' | format(item['Price per 100g'] * 10) }}</p>
+    <p>Calories per 100g: {{ item['Calories (kcal)'] }} kcal</p>
+
+    <h3>Macronutrients per 100g:</h3>
+    <p>Protein: {{ item['Protein (g)'] }}g</p>
+    <p>Carbs: {{ item['Carbohydrates (g)'] }}g</p>
+    <p>Fats: {{ item['Fat (g)'] }}g</p>
+
+    <div class="chart-container">
+        <canvas id="macroChart" width="400" height="400"></canvas>
+    </div>
+
+    <a href="/" class="back-button">← Back to Home</a>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var ctx = document.getElementById("macroChart").getContext("2d");
+        var chart = new Chart(ctx, {
+            type: "pie",
+            data: {
+                labels: ["Protein", "Carbs", "Fats"],
+                datasets: [{
+                    data: [{{ item["Protein (g)"] }}, {{ item["Carbohydrates (g)"] }}, {{ item["Fat (g)"] }}],
+                    backgroundColor: ["blue", "yellow", "red"]
+                }]
+            },
+            options: {
+                responsive: false,
+                maintainAspectRatio: false,
+                layout: {
+                    padding: 10
+                }
+            }
+        });
+    </script>
+</body>
+</html>

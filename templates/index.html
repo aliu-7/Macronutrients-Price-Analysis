@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project FullFill</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Project FullFill</h1>
+
+    <!-- Leaderboard for Cheapest Items -->
+    <div class="container">
+        <div class="leaderboard center-leaderboard">
+            <h2>Top 5 Cheapest Per Volume</h2>
+            {% for item in cheapest_items %}
+                <a href="/item/{{ item['Item'] }}" class="leaderboard-item">{{ item['Item'] }} - ${{ '%.2f' | format(item['Price per 100g'] * 10) }}/kg</a>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <h3>Best Protein Per $</h3>
+            {% for item in best_protein %}
+                <a href="/item/{{ item['Item'] }}" class="item-text">{{ item['Item'] }} - {{ '%.2f' | format(item['macro_per_dollar']) }}g of protein per $</a>
+            {% endfor %}
+        </div>
+
+        <div class="box">
+            <h3>Best Carbs Per $</h3>
+            {% for item in best_carbs %}
+                <a href="/item/{{ item['Item'] }}" class="item-text">{{ item['Item'] }} - {{ '%.2f' | format(item['macro_per_dollar']) }}g of carbs per $</a>
+            {% endfor %}
+        </div>
+
+        <div class="box">
+            <h3>Best Fats Per $</h3>
+            {% for item in best_fats %}
+                <a href="/item/{{ item['Item'] }}" class="item-text">{{ item['Item'] }} - {{ '%.2f' | format(item['macro_per_dollar']) }}g of fats per $</a>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Spacing Adjusted -->
+    <div class="container all-items-container">
+        <h2>All Food Items:         </h2>
+        <div class="search-container">
+            <input type="text" id="searchBar" placeholder="Search for food...">
+            <div id="searchResults"></div>
+        </div>
+    </div>
+
+    <!-- All Food Items -->
+    <div class="container">
+        <div class="all-items">
+            {% for item in all_food_items %}
+                <a href="/item/{{ item }}" class="item-link">{{ item }}</a>
+            {% endfor %}
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
