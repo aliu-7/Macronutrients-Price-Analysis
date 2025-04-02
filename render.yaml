@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: food-price-tracker
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: "python server.py"
